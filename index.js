@@ -13,10 +13,11 @@ request = request.defaults({jar: true});
 program
     .version('0.1.0')
     .option('-d, --destination [location]', 'Download destination')
-    .option('-w, --episode', 'Stack episode')
+    .option('-w, --episode [episdoeNumber]', 'Stack episode')
     .parse(process.argv);
 
 var STACK_URL = 'http://hypem.com/stack/';
+var destination = program.destination || '.';
 
 function getSongURLs($page){
     return JSON.parse($page('#displayList-data').text()).tracks;
@@ -49,10 +50,6 @@ function getSongDownloadLocations(songs){
     });
 
 }
-
-var destination = program.destination || '.';
-
-console.log(program.destination);
 
 
 request(STACK_URL + program.episode, function(err, resp, html){
