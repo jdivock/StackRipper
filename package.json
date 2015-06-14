@@ -14,7 +14,6 @@
     "commander": "^2.8.1",
     "debug": "^2.2.0",
     "object-assign": "^3.0.0",
-    "phantom": "^0.7.2",
     "request": "^2.57.0"
   }
 }
