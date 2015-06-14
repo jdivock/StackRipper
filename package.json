@@ -1,0 +1,20 @@
+{
+  "name": "StackRip",
+  "version": "1.0.0",
+  "description": "Quick lib to download songs from hypem's stack newsletter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Divock",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.2.1",
+    "cheerio": "^0.19.0",
+    "commander": "^2.8.1",
+    "debug": "^2.2.0",
+    "object-assign": "^3.0.0",
+    "phantom": "^0.7.2",
+    "request": "^2.57.0"
+  }
+}
