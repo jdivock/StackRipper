@@ -1,26 +1,18 @@
-'use strict';
-
-let Debug = require('debug');
-let async = require('async');
-let cheerio = require('cheerio');
-let fs = require('fs');
-let path = require('path');
-let program = require('commander');
-let request = require('request');
-
-Debug.enable('*');
-
-let debug = Debug('StackRip:index.js');
-
-request = request.defaults({jar: true});
+const debug = require('debug')('StackRip:index.js');
+const async = require('async');
+const cheerio = require('cheerio');
+const fs = require('fs');
+const path = require('path');
+const program = require('commander');
+const request = require('request').defaults({ jar: true });
 
 program.version('0.1.0')
   .option('-d, --destination [location]', 'Download destination')
   .option('-w, --episode [episdoeNumber]', 'Stack episode')
   .parse(process.argv);
 
-let STACK_URL = 'http://hypem.com/stack/';
-let destination = program.destination || '.';
+const STACK_URL = 'http://hypem.com/stack/';
+const destination = program.destination || '.';
 
 function getSongURLs($page) {
   return JSON.parse($page('#displayList-data').text()).tracks;
