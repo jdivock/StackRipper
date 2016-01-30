@@ -1,2 +1,5 @@
 /node_modules/
+/test/fixtures
 .DS_Store
+*.mp3
+npm-debug.log

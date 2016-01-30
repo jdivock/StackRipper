@@ -3,7 +3,7 @@ const program = require('commander');
 
 const stackRip = require('./lib/stackRip');
 
-program.version('0.1.0')
+program.version(require('./package.json').version)
   .option('-d, --destination [location]', 'Download destination')
   .option('-w, --episode [episdoeNumber]', 'Stack episode')
   .parse(process.argv);
