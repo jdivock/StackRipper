@@ -11,7 +11,8 @@
     "major": "release major",
     "minor": "release minor",
     "patch": "release patch",
-    "start": "node index"
+    "lint": "./node_modules/.bin/eslint .",
+    "test": "npm run lint && ./test/stackRip-test.sh"
   },
   "bin": "./index.js",
   "author": "Jason Divock",
