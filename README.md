@@ -1,4 +1,4 @@
-# StackRipper
+# StackRipper [![Build Status](https://travis-ci.org/jdivock/StackRipper.svg?branch=master)](https://travis-ci.org/jdivock/StackRipper)
 
 I could run network inspector every week and download stuff from
 soundcloud by hand. Or I could just write this script.
