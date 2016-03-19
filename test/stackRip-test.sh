@@ -6,7 +6,7 @@
 mkdir -p ./test/fixtures
 rm -rf ./test/fixtures/*mp3
 
-if node index.js -w 68 -d ./test/fixtures/
+if ./bin/stackRip.js -w 68 -d ./test/fixtures/
 then
   echo "Woot ripper completed"
 else
