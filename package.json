@@ -1,6 +1,6 @@
 {
   "name": "stackrip",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Quick lib to download songs from hypem's stack newsletter",
   "repository": {
     "type": "git",
