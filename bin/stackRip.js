@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /* eslint new-cap: 0 */
 const Debug = require('debug');
 const debug = Debug('StackRip:index.js');
@@ -5,9 +7,9 @@ const program = require('commander');
 
 Debug.enable('*');
 
-const stackRip = require('./lib/stackRip');
+const stackRip = require('../lib/stackRip');
 
-program.version(require('./package.json').version)
+program.version(require('../package.json').version)
   .option('-d, --destination [location]', 'Download destination')
   .option('-w, --episode [episodeNumber]', 'Stack episode')
   .parse(process.argv);

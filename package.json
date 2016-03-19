@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/jdivock/StackRipper.git"
   },
-  "main": "index.js",
+  "main": "bin/stackRip.js",
   "scripts": {
     "major": "release major",
     "minor": "release minor",
@@ -14,7 +14,7 @@
     "lint": "./node_modules/.bin/eslint .",
     "test": "npm run lint && ./test/stackRip-test.sh"
   },
-  "bin": "./index.js",
+  "bin": ".bin/stackRip.js",
   "author": "Jason Divock",
   "license": "ISC",
   "engines": {
